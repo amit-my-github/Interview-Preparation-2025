@@ -1,0 +1,29 @@
+SOLID principles are the five principles of object-oriented class design. These are the set of rules and best practices to follow while designing the class structure. 
+
+S stands for single responsibility, which means that a class in c# should take part in single responsibility. 
+In other words, there should be only one reason to change a particular class. 
+By adhering to this principle, we ensure that a class remains concise, focused, and easy to understand. 
+It promotes high cohesion and prevents classes from becoming bloated with unrelated responsibilities.
+
+O in solid stands for the Open Close Principle, which means the classes should be open for enhancements but closed for modifications. 
+So, this principle encourages us to design classes in such a way that can be easily modified without disturbing the existing functionality.
+By using abstraction, inheritance, and interfaces new functionalities can be added without altering the existing code base.
+This reduces the chances of introducing new bugs while modifying and breaking existing functionality as well.
+
+L in solid stands for the "lik-so-vis" substitution principle, which means the object of the super classes would be easily replaceable with the objects of the child classes without breaking the overall application or functionality.
+In other words, child classes should be able to be used as substitutes for their parent classes without causing any unexpected behavior or violating of the contract of the parent classes. 
+Adhering to this principle promotes modularity, extensibility, and code reusability. 
+
+I stands for interface segregation which means classes should not be forced to implement the interfaces they don't require. 
+It suggests interfaces to be fine-grained and precise instead of being large and monolithic. 
+By having smaller and more specialized interfaces, classes need to be dependent on the interfaces which are relevant to them.
+This principle helps in avoiding fat interfaces and prevents unnecessary dependencies between classes.  
+
+D in solid stands for dependency inversion which means classes should not be instantiating other classes, which they require to achieve their functionality. 
+Instead, there should be a container class, which should create objects of all the classes and inject whatever dependencies are required in whichever classes by itself.
+So it should be the responsibility of the container to create the objects and inject them
+wherever required, instead of the classes being responsible to create the objects of other classes that they require
+so that is the D dependency injection in SOLID.
+
+To by applying solid principles developers can create code, which is easy to understand, maintain, and extend as well. 
+These principles help in achieving modularity, flexibility, and scalability in systems, thereby leading to improved code quality or less risk of bugs being introduced in the system on modification.

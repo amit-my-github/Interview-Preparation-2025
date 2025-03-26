@@ -1,0 +1,155 @@
+SOLID principles are the five principles of object-oriented class design. These are the set of rules and best practices to follow while designing the class structure. 
+
+S stands for single responsibility, which means that a class in c# should take part in single responsibility. 
+In other words, there should be only one reason to change a particular class. 
+By adhering to this principle, we ensure that a class remains concise, focused, and easy to understand. 
+It promotes high cohesion and prevents classes from becoming bloated with unrelated responsibilities.
+
+O in solid stands for the Open Close Principle, which means the classes should be open for enhancements but closed for modifications. 
+So, this principle encourages us to the design classes in such a way that can be easily modified without disturbing the existing functionality by using abstraction, inheritance, and interfaces. 
+New functionalities can be added without altering the existing code base.
+This reduces the chances of introducing new bugs while modifying and breaking existing functionality as well.
+
+L in solid stands for the "lik-so-vis" substitution principle, which means the object of the superclasses would be easily replaceable with the objects of the child classes without breaking the overall application or functionality.
+In other words, child classes should be able to be used as substitutes for their parent classes without causing any unexpected Behavior or violation of the contract of the parent classes. 
+Adhering to this principle promotes modularity, extensibility, and code reusability. 
+
+I stands for interface segregation which means classes should not be forced to implement the interfaces they don't require. 
+It suggests interfaces to be fine-grained and precise instead of being large and monolithic. 
+By having smaller and more specialized interfaces, classes need to be dependent on the interfaces that are relevant to them.
+This principle helps avoid fat interfaces and prevents unnecessary dependencies between classes.  
+
+D in solid stands for dependency inversion which means classes should not be instantiating other classes, which they require to achieve their functionality. Instead, there should be a container class, which should create objects of all the classes and inject whatever dependencies are required in whichever classes by itself.
+So it should be the responsibility of the container to create the objects and inject them
+wherever required instead of the classes being responsible for creating the objects of other classes that they require
+so that is the D dependency injection in SOLID.
+
+By applying solid principles developers can create code, which is easy to understand, maintain, and extend as well. 
+These principles help in achieving modularity, flexibility, and scalability in systems, thereby leading to improved code quality or less risk of bugs being introduced in the system on modification.
+
+
+
+
+### **1. Single Responsibility Principle (SRP)**
+
+- **Explanation**: A class should have only one reason to change. 
+- **Real-world example**: Imagine you have a class `DocumentManager` responsible for managing documents. If this class handles not only saving and loading documents but also the printing logic, it would violate SRP. If we needed to change the printing logic, we'd have to modify the `DocumentManager` class, which affects its responsibility of managing documents.
+  
+- **Solution**: We can create separate classes for different responsibilities:
+  - `DocumentManager` handles saving and loading documents.
+  - `DocumentPrinter` handles printing logic.
+  
+- **Why it works**: By separating responsibilities, each class only has one reason to change. If we need to change how documents are printed, we only modify `DocumentPrinter`, not `DocumentManager`.
+
+---
+
+### **2. Open/Closed Principle (OCP)**
+
+- **Explanation**: Classes should be open for extension but closed for modification.
+- **Real-world example**: If we have a method `printDocument()` in `DocumentPrinter`, and we want to extend it to print additional document types (e.g., adding support for a new document type), we shouldn’t modify the existing `DocumentPrinter` class. This would violate OCP because we are modifying an existing class, which can introduce bugs.
+
+- **Solution**: Instead of modifying `DocumentPrinter`, we extend it by creating subclasses for different document types:
+  - `PdfDocumentPrinter` handles PDF printing.
+  - `WordDocumentPrinter` handles Word document printing.
+  - `ExcelDocumentPrinter` handles Excel document printing.
+
+- **Why it works**: The `DocumentPrinter` class is closed for modification, but the new document types are easily added by extending it. We can now add functionality for new document types without touching existing code.
+
+---
+
+### **3. Liskov Substitution Principle (LSP)**
+
+- **Explanation**: Objects of a superclass should be replaceable with objects of a subclass without affecting the functionality.
+- **Real-world example**: We can create a common interface `IDocumentPrinter` with a method `print()`. Then, each document type (PDF, Word, Excel) can implement this interface.
+  
+- **Solution**: 
+  - `PdfDocumentPrinter` implements `IDocumentPrinter` and overrides `print()`.
+  - `WordDocumentPrinter` implements `IDocumentPrinter` and overrides `print()`.
+  
+- **Why it works**: When the system calls `print()`, it doesn't care whether it's dealing with a `PdfDocumentPrinter` or a `WordDocumentPrinter`. Both are interchangeable, and the behavior is consistent.
+
+---
+
+### **4. Interface Segregation Principle (ISP)**
+
+- **Explanation**: Clients should not be forced to depend on interfaces they do not use.
+- **Real-world example**: Imagine an interface `IDocumentOperations` that defines methods like `edit()`, `print()`, and `save()`. If we have a `ReadOnlyDocument` that doesn't allow editing, forcing it to implement `edit()` would violate ISP because the class doesn't need this method.
+
+- **Solution**: Break down the large `IDocumentOperations` interface into smaller, more specific interfaces:
+  - `IEditableDocument` (for documents that can be edited, with methods like `edit()`).
+  - `IPrintableDocument` (for documents that can be printed, with methods like `print()`).
+  - `ISavableDocument` (for documents that can be saved, with methods like `save()`).
+
+- **Why it works**: Now, `ReadOnlyDocument` only needs to implement `IPrintableDocument` and `ISavableDocument`, not `IEditableDocument`. This prevents forcing unnecessary methods on a class.
+
+---
+
+### **5. Dependency Inversion Principle (DIP)**
+
+- **Explanation**: High-level modules should not depend on low-level modules. Both should depend on abstractions.
+- **Real-world example**: If the `DocumentManager` directly depends on `PdfDocumentPrinter`, `WordDocumentPrinter`, etc., it violates DIP. The `DocumentManager` would become tightly coupled to specific document types, making it difficult to add new ones without changing its code.
+
+- **Solution**: Instead of directly instantiating `PdfDocumentPrinter`, `WordDocumentPrinter`, etc., inject an abstraction (like `IDocumentPrinter`) into the `DocumentManager` via dependency injection.
+
+- **Why it works**: `DocumentManager` now depends on the abstraction `IDocumentPrinter` and not on concrete implementations. This allows us to easily swap out or extend the printer classes (e.g., add support for a new document type) without modifying `DocumentManager`.
+
+---
+
+### **Complete Example Code:**
+
+```python
+from abc import ABC, abstractmethod
+
+# Interface Segregation: Small, specific interfaces
+class IEditableDocument(ABC):
+    @abstractmethod
+    def edit(self):
+        pass
+
+class IPrintableDocument(ABC):
+    @abstractmethod
+    def print(self):
+        pass
+
+class ISavableDocument(ABC):
+    @abstractmethod
+    def save(self):
+        pass
+
+# Open/Closed: Classes are open for extension, closed for modification
+class DocumentPrinter:
+    def print_document(self, document: IPrintableDocument):
+        document.print()
+
+class PdfDocumentPrinter(IPrintableDocument):
+    def print(self):
+        print("Printing PDF document")
+
+class WordDocumentPrinter(IPrintableDocument):
+    def print(self):
+        print("Printing Word document")
+
+# Dependency Inversion: High-level module depends on abstraction
+class DocumentManager:
+    def __init__(self, printer: IPrintableDocument):
+        self.printer = printer
+    
+    def manage_document(self):
+        # Manage document tasks (e.g., save, edit)...
+        self.printer.print()
+
+# Usage
+pdf_printer = PdfDocumentPrinter()
+manager = DocumentManager(pdf_printer)
+manager.manage_document()  # Prints "Printing PDF document"
+```
+
+### **Summary:**
+By using a **Document Management System** as an example, you can show how each **SOLID principle** can be applied to make the system:
+1. **Modular** (SRP),
+2. **Extensible** without modification (OCP),
+3. **Flexible** for replacing objects (LSP),
+4. **Tailored** to specific needs (ISP),
+5. **Decoupled** (DIP).
+
+This one example illustrates how SOLID principles can work together to create a maintainable, scalable, and robust system!
