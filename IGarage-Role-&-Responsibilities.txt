@@ -1,0 +1,64 @@
+Dear Mr. Vilas, as previously discussed, I am forwarding the daily work activities list for IGarage.
+
+This compilation of tasks primarily highlights the practical, daytoday responsibilities I undertake. These include supporting fellow team members, troubleshooting issues, enhancing performance, and managing supportrelated duties.
+The list of tasks includes the following details:
+
+Daily Operations and Routine Tasks in IGarage:
+
+1. Software Development Activities:
+
+    Bug Fixing:
+      Analyzing and diagnosing reported issues in the application.
+      Debugging code to identify root causes of bugs and inefficiencies.
+      Fixing defects and ensuring proper functionality across environments.
+      Updating JIRA with bug statuses and resolutions.
+
+    Code Optimization:
+      Reviewing and optimizing code for performance improvements.
+      Refactoring legacy code to enhance maintainability and scalability.
+      Identifying performance bottlenecks (e.g., memory leaks, CPU usage).
+      Implementing caching mechanisms and optimizing database queries.
+    
+    Code Sharing and Collaboration:
+      Sharing code and solutions with other team members through Slack and GIT.
+      Assisting with feature development and supporting ongoing tasks.
+   
+2. Software Support and Maintenance Activities:
+
+    System Monitoring:
+      Continuously monitoring application health, server status, and resource usage.
+      Investigating and resolving alerts related to system performance or downtime.
+      Monitoring logs and tracking down issues related to production systems.
+    
+    Incident Response and Troubleshooting:
+      Responding to urgent system issues, outages, or service interruptions.
+      Investigating production issues and identifying root causes.
+      Coordinating with other teams to resolve highpriority incidents.
+ 
+    Assisting Other Team Members:
+      Providing assistance to other team members with their coding or debugging tasks.
+        
+    Deployment Support:
+      Assisting with the deployment process and ensuring smooth production rollouts.
+      Handling postdeployment issues such as performance checks or bug fixes.
+      Monitoring the system postdeployment to ensure stability and address any immediate problems.
+       
+3. Daily Operations and Routine Tasks:
+
+    Task Management:
+      Tracking daily tasks and prioritizing based on urgency and impact.
+      Updating project management tools (e.g., Jira, Trello, etc.) with progress and task statuses.
+      Collaborating with project managers to align development activities with business goals.
+
+    Collaboration and Communication:
+      Actively participating in sprint planning meetings.
+      Providing feedback and suggestions in team discussions and reviews.
+      Communicating status updates to the team and stakeholders.
+     
+    Refactoring and Code Quality Improvement:
+      Regularly refactoring code to improve readability and reduce technical debt.
+      Removing deprecated or unused code to keep the codebase clean and efficient.
+
+1. Anticipated tasks that must be completed in the upcoming sprint Or before 31Dec2024.
+     Peter expects to completely automate work order process.
+	 Upcoming milestone is to finalize the work order notes and enhance performance. The deadline for this is December 10, 2024. It seems there might be a slight delay due to other highpriority tasks.
