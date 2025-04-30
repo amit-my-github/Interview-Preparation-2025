@@ -1,4 +1,4 @@
-Great question! To get responses like the ones I’ve provided in the future for any other topics, you can use prompts that guide me to give a **structured and detailed response**. Here are some examples of how you can phrase your prompts to get similar quality answers:
+Here are some examples of how you can phrase your prompts to get similar quality answers:
 
 ### **1. Asking for an Explanation with Structure:**
 - **Example:**  
@@ -84,3 +84,33 @@ If you want to expand on an initial response or dive deeper into something speci
 These prompts will help me understand the structure and depth you're looking for in the response, whether you're asking for an explanation, a structured interview answer, or a deeper dive into a specific topic. The more specific you are about your needs, the better I can tailor the answer!
 
 Feel free to experiment with these prompts for any topic, and I'll follow a similar structure to what we've done here. Would you like to practice another topic?
+
+
+
+To simplify the script, you can provide me with a prompt like this:
+
+---
+
+**Prompt Example:**
+
+*"Can you simplify the script I would use to describe my role, responsibilities, and achievements while working in maintenance mode at iGarage? The current script is too formal and polished, and I need it in a more casual, straightforward way that's easier for me to explain during an interview."*
+
+---
+
+This prompt helps me understand that you're looking for a more relaxed, conversational tone that will make it easier for you to explain during an interview. You can also add any additional context, like whether you'd like it shorter or if there are specific points you want to focus on.
+
+
+If you want a shorter version of the script, you can use a prompt like this:
+
+---
+
+**Prompt Example:**
+
+*"Can you create a shorter version of the script for explaining my role and achievements at iGarage in maintenance mode? I need it to be more concise, focusing on the main points and in a simple, easy-to-explain style."*
+
+---
+
+
+
+
+Can you provide a sample of Professional Experience of web developer of 16 year experienced in casual, straightforward way that's easier to understand by every one.

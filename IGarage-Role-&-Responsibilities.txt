@@ -61,4 +61,4 @@ Daily Operations and Routine Tasks in IGarage:
 
 1. Anticipated tasks that must be completed in the upcoming sprint Or before 31Dec2024.
      Peter expects to completely automate work order process.
-	 Upcoming milestone is to finalize the work order notes and enhance performance. The deadline for this is December 10, 2024. It seems there might be a slight delay due to other highpriority tasks.
+	 Upcoming milestone is to finalize the work order notes and enhance performance. The deadline for this is December 10, 2024. It seems there might be a slight delay due to other high priority tasks.
