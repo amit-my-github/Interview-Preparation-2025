@@ -1,0 +1,66 @@
+Job Description
+6 years of experience in Angular 12, Angular 8, C#, DOT NET Core Web API, DOT NET Web API, SSIS package and SQL Server.
+Good at problem solving with strong analytical skills.
+Insightful in understanding and articulating the customer requirements.
+Working in Angular 12 UT development project.
+Worked on the development of automation project using Web API Service.
+Involved in creating Stored Procedures in SQL Server 2014.
+Developed enhancements for the application, that comprised complex internal calculations, using Silverlight & SQL with proper coding standards and minimum defects.
+Developed strong problem-solving skills by debugging and backtracking complex issues and by analysing the application code, XML and Store Procedures to identify the root cause of PROD issues and fixed it within SLA.
+Optimized the application code by removing dead code and code motion, after evaluating the performance of the application.
+
+Tech Stack:
+# Angular 8
+# Angular 12
+# Silverlight
+
+Frontend:
+
+# Angular 12
+# Angular 8
+# Silverlight
+
+Backend / Programming Languages:
+
+# C#
+# .NET Core Web API
+# .NET Web API
+
+Database & Data Integration:
+
+# SQL Server (2014)
+# Stored Procedures
+# SSIS (SQL Server Integration Services)
+
+Suggested 12-Hour Breakdown Plan
+
+2 hrs	Angular core (components, services, routing)
+1.5 hrs	Forms + API (Angular)
+1.5 hrs	.NET Core Controllers + Services + DI
+1 hr	SQL joins + SPs + transactions
+1 hr	JWT, Filters, Exception handling
+1 hr	SSIS + Silverlight 101 (just enough to talk)
+2 hrs	STAR stories, mock behavioral questions
+2 hrs	Practice common interview questions or mock test (optional if extra time)
+
+Explain What is Knockout.js, and what are its core principles in a simple, conversational tone, suitable for a 30-second spoken explanation
+
+What is Knockout.js, and what are its core principles?
+
+
+Describe the lifecycle of a Knockout ViewModel.
+
+In Knockout, the ViewModel lifecycle begins with defining your ViewModel—this includes setting up observables and any functions your UI will use. Then, you call ko.applyBindings(viewModel), which connects the ViewModel to the DOM. Knockout looks through the HTML for data-bind attributes and links them to your observables. From that point on, any changes in the ViewModel automatically update the UI, and vice versa for input elements. When you no longer need the bindings—like when removing parts of the UI—you can clean up with ko.cleanNode() or a custom dispose() method to free up memory
+
+flashcard-to-full-answer mapping method works very well for many types of technical and conceptual interview answers
+
+Why It Works:
+
+Flashcard = Memory Hook
+Short points are easy to remember and help you recall the structure of an answer under pressure.
+
+Mapped Sentences = Communication
+Expanding those into full sentences trains you to explain clearly and naturally—exactly what interviewers look for.
+
+Consistency = Confidence
+Once you build a few, your brain gets used to thinking in "point → expand" mode, so you sound fluent even on tough topics.

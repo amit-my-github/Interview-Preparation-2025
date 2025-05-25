@@ -114,3 +114,103 @@ If you want a shorter version of the script, you can use a prompt like this:
 
 
 Can you provide a sample of Professional Experience of web developer of 16 year experienced in casual, straightforward way that's easier to understand by every one.
+
+Acing Any Interview with ChatGPT in 7 Steps 👇
+
+1. Assign a Persona
+
+Purpose: Make ChatGPT act like your dream interviewer or mentor.
+
+Prompt Example:
+
+> "Act as a hiring manager at Google for a data analyst role. Ask me typical technical and behavioral interview questions and evaluate my responses."
+
+
+
+This simulates real-world scenarios and tailors the experience to a specific job and company.
+
+
+2. Define Your Objective
+
+Purpose: Set clear goals (mock interview, answer review, question bank creation, etc.)
+
+Prompt Example:
+
+> "Help me prepare for an HR round by generating 10 commonly asked questions and helping me craft STAR-format answers."
+
+
+
+Precision leads to highly relevant answers that match your interview stage.
+
+
+3. Set the Tone & Level
+
+Purpose: Adjust difficulty and formality based on your target role or experience level.
+
+Prompt Example:
+
+> "Ask me intermediate-level Python interview questions in a serious tone, suitable for someone with 2 years of experience."
+
+
+
+This avoids responses that are too basic or too advanced for your current level.
+
+
+4. Break it Down by Rounds or Topics
+
+Purpose: Divide interview prep into sections: Resume, HR, Tech, Case Studies, etc.
+
+Prompt Example:
+
+> "Give me a list of SQL-related scenario-based interview questions and then test me one-by-one like a quiz."
+
+
+
+You can focus on one area at a time and simulate the actual interview structure.
+
+
+5. Set Format and Time Limits
+
+Purpose: Practice under realistic constraints to boost time management.
+
+Prompt Example:
+
+> "Give me a behavioral question. I’ll answer, and you give feedback on structure, clarity, and duration (keep it under 2 minutes)."
+
+
+
+Mimics real interviews, where time and clarity are key.
+
+
+6. Provide Background or Context
+
+Purpose: Share your resume, experience, or job role so the advice is customized.
+
+Prompt Example:
+
+> "I have 3 years of experience in data analytics, strong in Excel and SQL, applying for a hybrid role. What kinds of questions should I expect?"
+
+
+ChatGPT tailors preparation to your actual strengths and gaps.
+
+
+7. Refine and Iterate
+
+Purpose: Improve your responses with feedback and polishing.
+
+Prompt Example:
+
+> "Here’s my answer to 'Tell me about yourself.' Suggest edits to make it more impactful and less generic."
+
+
+Feedback loops help you perfect delivery, language, and confidence.
+
+
+
+Combine All 7 Steps:
+
+> “Act as a Senior Product Manager at Amazon. I’m applying for an entry-level data analyst role. Conduct a mock interview with 5 behavioral questions in a conversational tone. After each answer I give, provide feedback on structure, tone, and content. Use STAR format as a guideline.”
+
+
+
+React with ❤ if this helped you
