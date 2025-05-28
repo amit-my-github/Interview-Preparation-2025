@@ -117,3 +117,32 @@ The business layer, deployed on the application server, implemented all domain l
 For high-performance search, we integrated Apache Solr using a custom client library, enabling full-text search, faceted filtering, and dynamic sorting — which wouldn’t have been efficient using only relational queries.
 
 Overall, this architectural evolution enabled us to scale horizontally, enforce domain boundaries, and keep the system flexible and maintainable over a 15+ year lifecycle — which was key to supporting continuous feature development in a complex legal domain.
+
+Absolutely! This is a strong architectural story with lots of depth, and turning it into **flashcard points + mapped expanded sentences** will make it easier to **review, remember, and explain in interviews**.
+
+---
+
+## 🔖 **Flashcard Points + Expanded Sentences**
+
+| **Flashcard Point**                                                       | **Expanded Sentence**                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Started with .NET Remoting and ASPX on .NET Framework 2.0**             | The LegalIntelligence project began in 2008, and when I joined, it was built using .NET Remoting for backend communication and ASPX pages for the UI, running on the .NET Framework 2.0 — a typical enterprise stack at that time. |
+| **Scaled system needed better modularity → moved to SOA with WCF**        | As the system scaled and got more complex, we needed better modularity and scalability, so we transitioned to a Service-Oriented Architecture using WCF.                                                                           |
+| **Independent services via WCF endpoints and Windows Services**           | Each service was built as a standalone component, hosted via Windows Services and exposed through WCF endpoints. This helped achieve loose coupling and allowed independent deployment and scaling.                                |
+| **UI migrated to ASP.NET MVC for cleaner architecture**                   | On the frontend, we migrated from ASPX to ASP.NET MVC to achieve better separation of concerns and create a cleaner, more maintainable UI architecture.                                                                            |
+| **Service proxy layer → OWIN-based Web API**                              | We introduced a service proxy layer between the UI and backend, which communicated through a self-hosted Web API using OWIN. This added an abstraction layer that helped isolate the business logic and improve testability.       |
+| **Business logic used Entity Framework with Repository & Unit of Work**   | The business layer was deployed on the application server and used Entity Framework along with Repository and Unit of Work patterns to ensure clean separation and easier testing and maintenance.                                 |
+| **Integrated Apache Solr for advanced search**                            | For high-performance and full-text search features, we integrated Apache Solr using a custom client, enabling fast filtering, faceting, and sorting beyond what relational queries could provide.                                  |
+| **Architecture enabled horizontal scaling and long-term maintainability** | This architecture allowed the system to scale horizontally, enforce clear domain boundaries, and stay maintainable over a 15+ year lifecycle — which was key for continuous feature delivery in a complex legal domain.            |
+
+---
+
+## 🧠 How to Use This:
+
+* Use the **left column as flashcards** to test yourself.
+* Use the **right column to practice speaking in full sentences** — perfect for interviews.
+* Break it into sections if needed: *initial stack → evolution → frontend → backend → search → architecture impact*.
+
+---
+
+Would you like this in a printable format or added to a flashcard app like Anki or Quizlet? I can also help break this into multiple interview Q\&A examples.

@@ -112,3 +112,4 @@ Angular’s dependency injection system makes it easy to follow these principles
 
 
 
+In one of the recent projects I worked on, I developed a component responsible for cleaning up company data as part of a GDPR compliance task. This component had to handle soft/hard deletion of users and companies, change ownership of related entities, generate reports, and send notifications — all wrapped around a batch processing model.
