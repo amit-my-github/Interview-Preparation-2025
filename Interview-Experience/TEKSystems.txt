@@ -2,3 +2,98 @@ First Round-1: 28-04-2025  Time 3:00PM - 3:30 PM
 # Research about the company and the client. My mistake as I could not speak about 60 sec pitch for  
 
 
+Sure! Here's a clean and reusable **Markdown (.md)** template that you can copy and paste into any Markdown editor (e.g., Notion, Obsidian, VS Code, HackMD):
+
+---
+
+```markdown
+# 📋 Technical Interview Experience - [Company Name]
+
+## 🧾 General Information
+- **Company**: [Company Name]
+- **Role**: [e.g., Software Engineer - Backend]
+- **Interview Date(s)**: [Month YYYY]
+- **Application Source**: [Referral / LinkedIn / Company Website / etc.]
+- **Outcome**: [Offer / Rejected / No Response / Pending]
+
+---
+
+## 🗂️ Interview Process Overview
+- **Total Rounds**: [e.g., 5]
+- **Format**: [Online / Onsite / Phone]
+- **Tools Used**: [Zoom, CoderPad, Google Meet, etc.]
+
+### ⏱️ Stages:
+1. Recruiter Screen
+2. Online Assessment
+3. Technical Phone Screen
+4. System Design
+5. Behavioral / Final Round
+
+---
+
+## 🔍 Round-by-Round Breakdown
+
+### ✅ Round 1: [Name / Type]  
+- **Interviewer(s)**: [Title or Name if known]  
+- **Duration**: [e.g., 60 min]  
+- **Focus Area**: [e.g., Data Structures, Algorithms, etc.]  
+- **Questions**:
+  - Q1: [Summarize or paste the question]
+  - Q2: [Optional additional question]
+- **Your Approach**:
+  - [How you solved it, edge cases, etc.]
+- **Difficulty**: [Easy / Medium / Hard]  
+- **Reflection**:
+  - ✅ What went well:
+  - ⚠️ What could’ve gone better:
+  - 💡 Lessons learned:
+
+---
+
+### ✅ Round 2: [Name / Type]  
+_(Repeat format from above)_
+
+---
+
+## 🧠 Behavioral / HR Round
+- **Format**: [Video / Phone / In-person]
+- **Key Questions**:
+  - Q1: [e.g., “Tell me about a time you handled conflict...”]
+  - Q2: [...]
+- **Your Answers** (use STAR):
+  - **S**ituation:
+  - **T**ask:
+  - **A**ction:
+  - **R**esult:
+- **Reflection**:
+  - [Your confidence, tone, clarity, etc.]
+
+---
+
+## 📈 Feedback & Results
+- **Received Feedback?**: [Yes / No]
+  - [Summarize if applicable]
+- **Self-Rating**: [1–10]
+- **Final Result**: [Offer / Rejected / No Response]
+
+---
+
+## 📝 Tips & Reflections
+- What you’d do differently:
+  - [...]
+- What helped you:
+  - [Prep platforms, mock interviews, etc.]
+- Notes on company culture or interview style:
+  - [...]
+
+---
+
+## 📚 Tags / Skills Tested
+`#algorithms` `#system-design` `#behavioral` `#databases` `#coding-round`
+
+```
+
+---
+
+Let me know if you want this converted to a downloadable `.md` file or linked with a Notion export!

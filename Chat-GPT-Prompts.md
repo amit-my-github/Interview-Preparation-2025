@@ -214,3 +214,19 @@ Combine All 7 Steps:
 
 
 React with ❤ if this helped you
+
+Act as a Senior Product Manager at Amazon and validate this script and provide a feedback 
+ 
+In LegalIntelligence project, we followed a Service-Oriented Architecture (SOA) to build modular and reusable services. 
+To implement this, we used Windows Communication Foundation (WCF) as our core service framework. 
+Each service was designed as an independent component, deployed via Windows Services, and exposed through WCF endpoints. 
+This helped us maintain loose coupling, reuse services across multiple modules, and scale specific parts of the system without impacting the whole.
+The front end was built using ASP.NET MVC for rendering views and handling user interactions.
+Instead of having the presentation layer talk directly to the business logic or database,
+We used a service proxy layer to abstract communication with our self-hosted Web API, which was built using OWIN. 
+As a result, the business logic stayed clean, testable, and resilient to changes in the API layer.
+Our business layer resided on the application server and was responsible for implementing all core logic. 
+It communicated with the database using Entity Framework, following the Repository and Unit of Work patterns to ensure clean separation of concerns, testability, and maintainability.
+This design allowed us to scale horizontally, keep each layer independently deployable and testable, and enforce domain boundaries. It also simplified onboarding and debugging, since each layer had a specific responsibility.
+In addition to structured data, we also needed high-performance search functionality. For that, we integrated Apache Solr, which we accessed through a custom-built Solr client library. This allowed us to perform full-text search, faceted filtering, and dynamic sorting — features that would be inefficient in a traditional relational database.
+So this is all about the overview of architecture of LI project
