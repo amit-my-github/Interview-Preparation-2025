@@ -103,7 +103,7 @@ STEP-4 APIs
        
 STEP-5 Common LLD Problems 
 		- Design a tic tac toe or chess game
-		- Design a splitwise app
+		- Design a split wise app
 		- Design a parking lot
 		- Design a movie ticker system 
 		- Design a logging framework

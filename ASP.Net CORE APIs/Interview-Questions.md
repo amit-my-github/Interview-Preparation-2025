@@ -160,7 +160,13 @@ Each letter maps to a core concept:
 | ----------------------------- | -------------------------------------------------------- |
 | **Security**                  | CORS, Authentication & Authorization                     |
 | **Request/Response Pipeline** | Middleware, Routing, Model Binding, Filters              |
-| **Response Shaping**          | Return Types, Status Codes, Content Negotiation, Caching |
+| **Response Shaping**          | Return Types, Status Codes, Con
+tent Negotiation, Caching |
 | **Maintainability**           | Dependency Injection, API Versioning, Organization       |
 
 ---
+
+Please Simply the language more 
+
+How a 16 year of experienced developer explain the concept of "Model Binding" .net core APIs. 
+conversational tone and these in simple language?
